@@ -15,11 +15,12 @@
       function tipo() {
         var pais = window.document.querySelector("input#txtnac")
         var res = window.document.querySelector("div#res")
-        if (pais != "Brasil") {
-          res.innerHTML += `<p>Seu País é:<strong>${pais}</strong></p>`
+        var pais = " Brasil"
+        if (pais == "Brasil") {
+          res.innerHTML += `<p>Seu País é: <strong>${pais}</strong></p>`
           res.innerHTML += `<p>Você é:<strong>Estrangeiro</strong></p>`
         } else {
-          res.innerHTML += `<p>Seu País é:<strong>${pais}</strong></p>`
+          res.innerHTML += `<p>Seu País é: <strong>${pais}</strong></p>`
           res.innerHTML += `<p>Você é:<strong>Você é Brasileiro</strong></p>`
         }
       }
